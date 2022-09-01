@@ -1,0 +1,44 @@
+@import "variables";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $light-color;
+  color: $dark-color;
+  font-family: $font-stack;
+  line-height: 1.5;
+}
+
+header {
+  background-color: $dark-color;
+  color: $light-color;
+  padding: 1rem;
+  h1 {
+    text-align: center;
+  }
+}
+.section {
+  padding: 3rem;
+
+  h3 {
+    font-size: 2rem;
+
+  }
+  &-a{
+    background-color: $primary-color;
+    color: $light-color;
+
+
+  }
+  &-b{
+    background-color: $secondary-color;
+
+  }a:
+  a{
+    color: $dark-color;
+
+  }
+}

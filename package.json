@@ -1,0 +1,24 @@
+{
+  "name": "sass-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steven1sanchez/Web-Languages-Sass-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/steven1sanchez/Web-Languages-Sass-Project/issues"
+  },
+  "homepage": "https://github.com/steven1sanchez/Web-Languages-Sass-Project#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

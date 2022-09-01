@@ -1,0 +1,111 @@
+$primary-color: hsl(179, 62%, 43%);
+$secondary-color: hsl(71, 73%, 54%);
+$light-color1: hsl(204, 43%, 93%);
+$light-color2:  hsl(218, 22%, 67%);
+
+.attribution {font-size: 11px; text-align: center; }
+.attribution a {color: hsl(228, 45%, 44%); }
+
+@media screen  and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
+*{
+  box-sizing: border-box;
+}
+
+.header{
+  color: $primary-color;
+  font-size: 40px;
+
+}
+
+.greyish-blue{
+  color: $light-color2;
+}
+
+.yellow-text{
+  color: $secondary-color;
+
+}
+
+p{
+  font-size: 18px;
+}
+
+p.faded{
+  color: hsl(170, 60%, 67%);
+  display: flex;
+  align-items: center;
+
+}
+p.faded span{
+  color: white;
+  font-size: 50px;
+  margin-right: 10px;
+}
+
+body{
+  background-color: hsl(204, 43%, 93%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Karla', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container{
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0,0,0.05 );
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  width: 800px;
+}
+
+section{
+  padding: 35px;
+}
+
+.cyan{
+  background-color: $primary-color;
+  color: white;
+}
+
+.row{
+  display: flex;
+}
+.row > section{
+  flex: 1;
+}
+
+.cyan2{
+  background-color: hsl(179, 47%, 52%);
+  color: white;
+}
+ul{
+  padding: 0;
+  opacity: 0.7;
+  list-style-type: none;
+}
+
+ul li{
+  line-height: 24px;
+
+}
+
+button {
+  border: none;
+  background-color: $secondary-color;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  padding: 15px 0;
+  width: 100%;
+}
