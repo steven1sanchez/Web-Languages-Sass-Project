@@ -1,62 +1,20 @@
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+  padding: 0; }
 
 body {
-  background-color: yellow;
-  color: #333;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.3; }
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.6; }
 
-header {
-  background-color: #333;
-  color: yellow;
-  padding: 1rem; }
-  header h1 {
-    text-align: center; }
-
-.section {
-  padding: 3rem; }
-  .section h3 {
-    font-size: 2rem; }
-  .section-a {
-    background-color: steelblue;
-    color: yellow; }
-    .section-a a {
-      color: yellow; }
-      .section-a a:hover {
-        color: skyblue; }
-  .section-b {
-    background-color: skyblue; }
-    .section-b a {
-      color: #333; }
-      .section-b a:hover {
-        color: steelblue; }
-
-.btn {
-  display: inline-block;
-  padding: 12px 32px;
-  border: none;
-  cursor: pointer;
+a {
   text-decoration: none;
-  margin-top: 1rem; }
+  color: #333; }
 
-.btn-light {
-  background-color: yellow;
-  color: yellow !important; }
-  .btn-light:hover {
-    background-color: #999900; }
+ul {
+  list-style: none; }
 
-.btn-dark {
-  background-color: #333;
-  color: yellow !important; }
-  .btn-dark:hover {
-    background-color: #666666; }
+h2, h3, h4 {
+  text-transform: uppercase; }
 
-.btn:hover {
-  -webkit-transform: rotate(5deg);
-  -moz-transform: rotate(5deg);
-  -ms-transform: rotate(5deg);
-  -o-transform: rotate(5deg);
-  transform: rotate(5deg); }
+img {
+  max-width: 100%; }

@@ -3,8 +3,14 @@ $secondary-color: hsl(71, 73%, 54%);
 $light-color1: hsl(204, 43%, 93%);
 $light-color2:  hsl(218, 22%, 67%);
 
-.attribution {font-size: 11px; text-align: center; }
-.attribution a {color: hsl(228, 45%, 44%); }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(33, 70%, 51%);
+  }
+}
 
 @media screen  and (max-width: 600px) {
   .row {
@@ -21,7 +27,7 @@ $light-color2:  hsl(218, 22%, 67%);
 
 }
 
-.greyish-blue{
+.grayish-blue{
   color: $light-color2;
 }
 
@@ -57,55 +63,58 @@ body{
   padding: 20px;
 }
 
-.container{
+.container {
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0, 0,0,0.05 );
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
   max-width: 800px;
   margin: auto;
   overflow: hidden;
   width: 800px;
-}
 
-section{
-  padding: 35px;
-}
 
-.cyan{
-  background-color: $primary-color;
-  color: white;
-}
+  section {
+    padding: 35px;
+  }
 
-.row{
-  display: flex;
-}
-.row > section{
-  flex: 1;
-}
+  .cyan {
+    background-color: $primary-color;
+    color: white;
+  }
 
-.cyan2{
-  background-color: hsl(179, 47%, 52%);
-  color: white;
-}
-ul{
-  padding: 0;
-  opacity: 0.7;
-  list-style-type: none;
-}
+  .row {
+    display: flex;
 
-ul li{
-  line-height: 24px;
+    > section {
+      flex: 1;
+    }
+  }
 
-}
+  .cyan2 {
+    background-color: hsl(179, 47%, 52%);
+    color: white;
+  }
 
-button {
-  border: none;
-  background-color: $secondary-color;
-  border-radius: 5px;
-  color: white;
-  font-size: 20px;
-  font-family: 'Karla', sans-serif;
-  font-weight: 700;
-  padding: 15px 0;
-  width: 100%;
+  ul {
+    padding: 0;
+    opacity: 0.7;
+    list-style-type: none;
+
+    li {
+      line-height: 24px;
+
+    }
+  }
+
+  button {
+    border: none;
+    background-color: $secondary-color;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    padding: 15px 0;
+    width: 100%;
+  }
 }
