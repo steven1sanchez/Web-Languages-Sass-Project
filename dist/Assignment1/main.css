@@ -1,107 +1,83 @@
-@media screen  and (max-width: 600px){
-    .row{
-        flex-direction: column;
-    }
+.attribution {
+    font-size: 11px;
+    text-align: center; }
+.attribution a {
+    color: #da8b2b; }
 
-}
+@media screen and (max-width: 600px) {
+    .row {
+        flex-direction: column; } }
 
- .attribution {font-size: 11px; text-align: center; }
-.attribution a {color: hsl(228, 45%, 44%); }
+* {
+    box-sizing: border-box; }
 
-*{
-    box-sizing: border-box;
-}
+.header {
+    color: #2ab2af;
+    font-size: 40px; }
 
-.header{
-    color: hsl(179, 62%, 43%);
-    font-size: 40px;
+.grayish-blue {
+    color: #98a6bd; }
 
-}
+.yellow-text {
+    color: #c0df34; }
 
-.greyish-blue{
-    color: hsl(218, 22%, 67%);
-}
+p {
+    font-size: 18px; }
 
-.yellow-text{
-    color:  hsl(71, 73%, 54%);
-
-}
-
-p{
-  font-size: 18px;
-}
-
-p.faded{
-    color: hsl(170, 60%, 67%);
+p.faded {
+    color: #78ddcd;
     display: flex;
-    align-items: center;
+    align-items: center; }
 
-}
-p.faded span{
- color: white;
+p.faded span {
+    color: white;
     font-size: 50px;
-    margin-right: 10px;
-}
+    margin-right: 10px; }
 
-body{
-    background-color: hsl(204, 43%, 93%);
+body {
+    background-color: #e5eff5;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Karla', sans-serif;
     margin: 0;
     min-height: 100vh;
-    padding: 20px;
-}
+    padding: 20px; }
 
-.container{
+.container {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0,0,0.05 );
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
     max-width: 800px;
     margin: auto;
     overflow: hidden;
-}
-
-section{
-    padding: 35px;
-}
-
-.cyan{
-    background-color: hsl(179, 62%, 43%);
-    color: white;
-}
-
-.row{
-    display: flex;
-}
-.row > section{
-    flex: 1;
-}
-
-.cyan2{
-    background-color: hsl(179, 47%, 52%);
-    color: white;
-}
-ul{
+    width: 800px; }
+.container section {
+    padding: 35px; }
+.container .cyan {
+    background-color: #2ab2af;
+    color: white; }
+.container .row {
+    display: flex; }
+.container .row > section {
+    flex: 1; }
+.container .cyan2 {
+    background-color: #4bbebc;
+    color: white; }
+.container ul {
     padding: 0;
     opacity: 0.7;
-    list-style-type: none;
-}
-
-ul li{
-    line-height: 24px;
-
-}
-
-button{
+    list-style-type: none; }
+.container ul li {
+    line-height: 24px; }
+.container button {
     border: none;
-    background-color: hsl(71, 73%, 54%);
+    background-color: #c0df34;
     border-radius: 5px;
     color: white;
     font-size: 20px;
     font-family: 'Karla', sans-serif;
     font-weight: 700;
     padding: 15px 0;
-    width: 100%;
-}
+    width: 100%; }
+
