@@ -1,7 +1,7 @@
 $primary-color: hsl(179, 62%, 43%);
 $secondary-color: hsl(71, 73%, 54%);
 $light-color1: hsl(204, 43%, 93%);
-$light-color2:  hsl(218, 22%, 67%);
+$light-color2: hsl(218, 22%, 67%);
 
 .attribution {
   font-size: 11px;
@@ -12,47 +12,48 @@ $light-color2:  hsl(218, 22%, 67%);
   }
 }
 
-@media screen  and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .row {
     flex-direction: column;
   }
 }
-*{
+
+* {
   box-sizing: border-box;
 }
 
-.header{
+.header {
   color: $primary-color;
   font-size: 40px;
 
 }
 
-.grayish-blue{
+.grayish-blue {
   color: $light-color2;
 }
 
-.yellow-text{
+.yellow-text {
   color: $secondary-color;
 
 }
 
-p{
+p {
   font-size: 18px;
 }
 
-p.faded{
+p.faded {
   color: hsl(170, 60%, 67%);
   display: flex;
   align-items: center;
 
-}
-p.faded span{
-  color: white;
-  font-size: 50px;
-  margin-right: 10px;
-}
 
-body{
+  span {
+    color: white;
+    font-size: 50px;
+    margin-right: 10px;
+  }
+}
+body {
   background-color: $light-color1;
   display: flex;
   align-items: center;
