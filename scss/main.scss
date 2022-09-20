@@ -1,5 +1,6 @@
 @import "variables";
 @import "utilities";
+@import "function";
 * {
   margin: 0;
   padding: 0;
@@ -27,49 +28,89 @@ h2, h3, h4 {
 
 #header {
   &-home {
-    background: url("../img/stars.jpg") no-repeat center center / cover;
-    height: 100vh;
+    background: url("../img/moon.jpg") no-repeat center center / cover;
+    height: 70vh;
     color: #fff;
   }
+    &-content {
+      text-align: center;
+      padding-top: 2em;
+      h1{
+        font-size: 4rem;
+        line-height: 1.3;
+      }
+    }
 }
 
-#logo{
+#logo {
   width: 70px;
   height: 70px;
 
 }
-.container{
+.lead {
+  background-color: $light-transparent-color;
+  font-size: 20px;
+}
+.container {
   max-width: $website-width;
   padding: 0 1.5rem;
-  background-color: blue ;
   margin: 0 auto;
   overflow: hidden;
 }
-#main-nav{
+
+#main-nav {
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;
-  ul{
+
+  ul {
     display: flex;
-    li{
+    padding-top: 1rem;
+
+    a {
       padding: 1rem 1.5rem;
-    }
-  }
-  a {
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    border-bottom: 3px transparent solid;
-    padding-bottom: 0.5rem;
-    transition: border-color 0.3s;
+      color: $light-color;
+      text-transform: uppercase;
+      border-bottom: 3px transparent solid;
+      transition: border-color 0.5s;
 
-    &:hover {
-      border-color: $medium-color;
-    }
+      &:hover {
+        border-color: $medium-color;
+      }
 
-    &.current {
-      border-color: $main-color;
+      &.current {
+        border-color: $main-color;
+      }
     }
   }
 }
+.btn {
+  @extend %btn-shared;
 
+  &-main {
+    background-color: $main-color;
+    color: $dark-color;
+
+    &:hover {
+      background-color: lighten($main-color, 10%);
+    }
+  }
+
+  &-light {
+    background-color: $light-color;
+    color: set-text-color($light-color);;
+
+    &:hover {
+      background-color: darken($light-color, 10%);
+    }
+  }
+
+  &-dark {
+    background-color: $dark-color;
+    color: set-text-color($dark-color);;
+
+    &:hover {
+      background-color: lighten($dark-color, 10%);
+    }
+  }
+}

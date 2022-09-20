@@ -1,3 +1,4 @@
+@import "function";
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +9,14 @@
 .container{
   max-width: $website-width;
   padding: 0 1.5rem;
-  background-color: yellow ;
   margin: 0 auto;
   overflow: hidden;
+}
+%btn-shared{
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  margin-top: 1rem;
+  @include transition(background-color 0.5s);
 }
