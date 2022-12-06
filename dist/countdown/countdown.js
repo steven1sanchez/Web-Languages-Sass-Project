@@ -25,6 +25,12 @@ let holidayParties = [
         date: "July 4",
         time: "12:00:00",
         bgImage: "https://images.unsplash.com/photo-1521478413868-1bbd982fa4a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+    },
+    {
+        title: "Ugly Christmas Sweater",
+        date: "December 15",
+        time: "18:30:00",
+        bgImage: "https://images.unsplash.com/photo-1607575664476-c7772f6d8a42?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
     }
 ];
 
@@ -47,6 +53,9 @@ for(let i = 0; i < holidayParties.length; i++) {
 }
 
 let nextPartyDate = new Date(`${nextParty.date} ${currentYear} ${nextParty.time}`);
+if(nextPartyDate < currentTime) {
+    nextPartyDate = new Date(`${nextParty.date} ${++currentYear} ${nextParty.time}`);
+}
 day.textContent = nextPartyDate.toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"});
 day_time.textContent = nextPartyDate.toLocaleTimeString('en-us', { hour: "numeric", minute: "numeric"});
 party_title.textContent = `Steven's ${nextParty.title}  Party`;
