@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/steven1sanchez/Web-Languages-Sass-Project#readme",
   "dependencies": {
-    "node-sass": "^7.0.1"
+    "node-sass": "^8.0.0"
   }
 }

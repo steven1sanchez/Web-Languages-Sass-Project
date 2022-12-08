@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Passion+One&family=Rubik:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%; }
+
+body {
+  margin: 10px;
+  font-family: 'PT Sans', sans-serif; }
+
+.container {
+  width: 1100px;
+  min-height: 200px;
+  margin: 0 auto; }
+
+.news-image {
+  height: 350px;
+  background-image: url("../../final_project/kitten.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.news-header {
+  font-family: 'Passion One', cursive;
+  font-size: 2rem;
+  margin: 10px 0; }
+
+.news-sidebar {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  margin: 2rem 0; }
+  .news-sidebar-header {
+    color: darkorange;
+    font-family: 'Passion One', cursive;
+    font-size: 1.75rem;
+    font-weight: 200; }
+  .news-sidebar-article {
+    margin: 20px 0; }
+    .news-sidebar-article h4 {
+      font-size: 1.5rem;
+      margin: 10px 0;
+      font-family: 'Passion One', cursive;
+      font-weight: 700; }
+      .news-sidebar-article h4 a {
+        color: white;
+        text-decoration: none; }
+
+.btn {
+  background-color: darkorange;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer; }
+
+btn:hover {
+  background-color: orange; }
+
+@media screen and (min-width: 825px) {
+  .news {
+    display: grid;
+    grid-template-areas: "news-image news-image news-sidebar" "news-header news-preview news-sidebar";
+    grid-gap: 30px; }
+    .news-image {
+      grid-area: news-image; }
+    .news-header {
+      grid-area: news-header;
+      font-size: 3rem;
+      margin: 0; }
+    .news-preview {
+      grid-area: news-preview; }
+    .news-sidebar {
+      grid-area: news-sidebar;
+      margin: 0; } }

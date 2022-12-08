@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%; }
+
+body {
+  margin: 10px;
+  font-family: 'Barlow Semi Condensed', sans-serif; }
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 0 0; }
+
+.testimonial {
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 10px 10px 10px -10px #cfcfcf;
+  margin-bottom: 2rem; }
+  .testimonial-user {
+    display: flex;
+    margin-bottom: 1.25rem;
+    align-items: center; }
+    .testimonial-user picture {
+      height: 40px;
+      width: 40px;
+      border: 3px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      margin-right: 1rem; }
+    .testimonial-user .name h2 {
+      font-size: 1.25rem;
+      margin-left: 2rem; }
+    .testimonial-user .name p {
+      margin-left: 2rem;
+      opacity: 50%; }
+  .testimonial-content .highlight {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem; }
+  .testimonial-content .comment {
+    letter-spacing: 0.75px;
+    opacity: 70%;
+    line-height: 1.5; }
+
+.grid {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-areas: "grid1 grid1 grid2 grid5" "grid3 grid4 grid4 grid5"; }
+
+.grid-1 {
+  grid-area: grid1;
+  background: url("dist/final_project/images/bg-pattern-quotation.svg") #7541c8 no-repeat top 20px right 80px;
+  color: white; }
+
+.grid-2 {
+  grid-area: grid2;
+  background-color: #48556a;
+  color: white; }
+
+.grid-3 {
+  grid-area: grid3;
+  background-color: white;
+  color: #48556a; }
+
+.grid-4 {
+  grid-area: grid4;
+  background-color: #19212e;
+  color: white; }
+
+.grid-5 {
+  grid-area: grid5;
+  background-color: white;
+  border-radius: 50px;
+  color: #48556a; }
+
+@media screen and (max-width: 860px) {
+  .grid {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-areas: "grid1" "grid2" "grid3" "grid4" "grid5"; }
+  .grid-1 {
+    grid-area: grid1;
+    flex-direction: column; }
+  .grid-2 {
+    grid-area: grid2; }
+  .grid-3 {
+    grid-area: grid3; }
+  .grid-4 {
+    grid-area: grid4; }
+  .grid-5 {
+    grid-area: grid5; }
+  .testimonial {
+    width: 100%; }
+  .grid {
+    width: 100%; } }
